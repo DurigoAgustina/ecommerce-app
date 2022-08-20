@@ -1,0 +1,27 @@
+// Colors
+
+/// Primary
+$main-color: hsl(219, 64%, 32%);
+$main-color-focus-hover: hsl(219, 64%,28%);
+$main-color-active: hsl(219, 64%, 24%);
+
+/// Neutros
+$background-color:hsl(0, 0%, 100%);
+$gray10: hsl(0, 0%, 90%);
+$gray25: hsl(0, 0%, 75%);
+$gray45: hsl(0, 0%, 45%);
+$gray25: hsl(0, 0%, 25%);
+$black: #000;
+
+/// Error
+$error-color: #c14242;
+
+/// Warning
+$warning-color: #cb7b01;
+
+/// Success
+$success-color: #35aa5f;
+
+
+// Border radius
+$border-radius: 8px;
