@@ -1,0 +1,72 @@
+@import '/src/styles/variables';
+@import '/src/styles/tipography';
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  border: 2px solid transparent;
+  border-radius: $border-radius;
+  transition: .2s all ease;
+  text-transform: uppercase;
+  font-weight: $font-bold;
+  width: min-content;
+
+  &:active {
+    box-shadow: 2px 2px 5px $gray15;
+  }
+
+  // ----- Start Size
+  &.small {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: .7rem;
+  }
+
+  &.big {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    padding: 1rem;
+  }
+  // ----- End Size
+
+
+  // ----- Start Types
+  /// Primary
+  &.primary {
+    background-color: $main-color;
+    border-color: $main-color;
+    color: $white;
+
+    &:focus, &:hover {
+      background-color: $main-color-focus-hover;
+      border-color: $main-color-focus-hover;
+    }
+
+    &:active {
+      background-color: $main-color-active;
+      border-color: $main-color-active;
+    }
+  }
+
+  /// Secondary
+  &.secondary {
+    background-color: $white;
+    border-color: $main-color;
+    color: $main-color;
+
+    &:focus, &:hover {
+      background-color: $main-color-focus-hover;
+      border-color: $main-color-focus-hover;
+      color: $white;
+    }
+
+    &:active {
+      background-color: $main-color-active;
+      border-color: $main-color-active;
+    }
+  }
+  // ----- End Types
+
+
+}
